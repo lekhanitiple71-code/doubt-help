@@ -1,0 +1,46 @@
+[debug] [2025-12-28T10:37:28.951Z] ----------------------------------------------------------------------
+[debug] [2025-12-28T10:37:28.957Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-12-28T10:37:28.957Z] CLI Version:   15.1.0
+[debug] [2025-12-28T10:37:28.957Z] Platform:      win32
+[debug] [2025-12-28T10:37:28.958Z] Node Version:  v24.12.0
+[debug] [2025-12-28T10:37:28.958Z] Time:          Sun Dec 28 2025 16:07:28 GMT+0530 (India Standard Time)
+[debug] [2025-12-28T10:37:28.958Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-12-28T10:37:32.063Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-12-28T10:37:32.064Z] > authorizing via signed-in user (lekhanitiple71@gmail.com)
+[debug] [2025-12-28T10:37:32.064Z] [iam] checking project my-first-project-c224c for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-12-28T10:37:32.066Z] Checked if tokens are valid: true, expires at: 1766921782714
+[debug] [2025-12-28T10:37:32.066Z] Checked if tokens are valid: true, expires at: 1766921782714
+[debug] [2025-12-28T10:37:32.068Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-first-project-c224c:testIamPermissions [none]
+[debug] [2025-12-28T10:37:32.068Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-first-project-c224c:testIamPermissions x-goog-quota-user=projects/my-first-project-c224c
+[debug] [2025-12-28T10:37:32.068Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-first-project-c224c:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-12-28T10:37:34.026Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-first-project-c224c:testIamPermissions 200
+[debug] [2025-12-28T10:37:34.026Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-first-project-c224c:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-12-28T10:37:34.027Z] Checked if tokens are valid: true, expires at: 1766921782714
+[debug] [2025-12-28T10:37:34.027Z] Checked if tokens are valid: true, expires at: 1766921782714
+[debug] [2025-12-28T10:37:34.028Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/my-first-project-c224c [none]
+[debug] [2025-12-28T10:37:35.147Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/my-first-project-c224c 200
+[debug] [2025-12-28T10:37:35.147Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/my-first-project-c224c {"projectId":"my-first-project-c224c","projectNumber":"767993888318","displayName":"student-doubt-hub","name":"projects/my-first-project-c224c","resources":{"hostingSite":"my-first-project-c224c","realtimeDatabaseInstance":"my-first-project-c224c-default-rtdb"},"state":"ACTIVE","etag":"1_0895e7bf-75f4-49a9-af61-55684152d876"}
+[info] 
+[info] === Deploying to 'my-first-project-c224c'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-12-28T10:37:35.155Z] Checked if tokens are valid: true, expires at: 1766921782714
+[debug] [2025-12-28T10:37:35.155Z] Checked if tokens are valid: true, expires at: 1766921782714
+[debug] [2025-12-28T10:37:35.155Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/my-first-project-c224c/versions [none]
+[debug] [2025-12-28T10:37:35.156Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/my-first-project-c224c/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-12-28T10:37:37.342Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/my-first-project-c224c/versions 200
+[debug] [2025-12-28T10:37:37.342Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/my-first-project-c224c/versions {"name":"projects/767993888318/sites/my-first-project-c224c/versions/5f9e48d0f21fd14c","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[my-first-project-c224c]: beginning deploy... 
+[info] i  hosting[my-first-project-c224c]: found 74589 files in . 
+[debug] [2025-12-28T10:38:01.200Z] [hosting] uploading with 200 concurrency
+[debug] [2025-12-28T10:38:01.202Z] [hosting] hash cache [] not populated
+[debug] [2025-12-28T10:38:01.280Z] Error: EBUSY: resource busy or locked, open 'C:\Users\Dell\ntuser.dat.LOG1'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-12-28T10:38:01.282Z] Error: EBUSY: resource busy or locked, open 'C:\Users\Dell\ntuser.dat.LOG2'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-12-28T10:38:01.283Z] Error: EBUSY: resource busy or locked, open 'C:\Users\Dell\NTUSER.DAT'
+[error] 
+[error] Error: An unexpected error has occurred.
